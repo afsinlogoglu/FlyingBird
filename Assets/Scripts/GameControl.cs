@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameControl : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
 
     public GameObject backgroundOne;
     public GameObject backgroundTwo;
@@ -48,7 +48,7 @@ public class GameControl : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         if (endGame)
