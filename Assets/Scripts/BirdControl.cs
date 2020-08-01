@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class BirdControl : MonoBehaviour
 {
-    public Sprite []birdSprite; //kus animasyonu icin dizi olusturuluyor
+    public Sprite []birdSprite; 
     SpriteRenderer spriteRenderer;
     bool movingControl = true;
     int birdCounter = 0;
@@ -21,7 +21,7 @@ public class BirdControl : MonoBehaviour
 
     AudioSource []sounds;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -30,7 +30,6 @@ public class BirdControl : MonoBehaviour
         sounds = GetComponents<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(Input.GetMouseButtonDown(0) && gameOver==true)
